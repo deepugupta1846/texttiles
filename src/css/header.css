@@ -1,0 +1,65 @@
+.header{
+    width: 100%;
+    height: auto;
+    border-top: 5px solid #D0DA05;
+    
+}
+.header-content{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-content img{
+    width: 50%;
+}
+.header-content h1{
+    font-family: 'Pristina';
+    font-weight: bold;
+    color: #00787d;
+    padding: 0 0 0px 0;
+    font-size: 28px;
+}
+.company{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.company-details{
+    width: 150px;
+}
+.company-details .company-title{
+    width: 100px;
+    color: red;
+    display: none;
+}
+.company-details:hover{
+    cursor: pointer;
+    margin-top: -30px;
+}
+.company-details:hover  .company-title{
+    cursor: pointer;
+    display: block;
+   margin-bottom: -60px;
+}
+
+@media only screen and (max-width: 720px) {
+    .company{
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+    .company-details{
+        margin-top: 50px;
+    }
+    .header-content h1{
+        text-align: center;
+    }
+    .header-content .logo{
+        width: 100%;
+    }
+  }
